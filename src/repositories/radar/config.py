@@ -83,7 +83,8 @@ floorsPathsImgs = [
     loadFromRGBToGray(
         f'{currentPath}/images/paths/floor-15.png'),
 ]
-floorsPathsSqms = np.load(f'{currentPath}/npys/floorsPathsSqms.npy')
+floorsPathsSqms = np.load(
+    f'{currentPath}/npys/floorsPathsSqms.npy', allow_pickle=True)
 images = {
     'tools': loadFromRGBToGray(f'{currentPath}/images/buttons/radarTools.png')
 }
